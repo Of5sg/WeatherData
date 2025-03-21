@@ -9,7 +9,7 @@ man vil etter valgt by, kunne skrive inn hvilken type data man vil ha ut.
 > #### For å kjøre scriptet:
 > Scriptet kjører i node.js
 >> Det kan kjøres fra kommandolinjen ved å:
->> + navigere til scriptets mappe, i konsollen
+>> + navigere til scriptets mappe i konsollen.
 >> + og bruke kommandoen `node Main.js`
 >
 > scriptet vil kun fungere hvis node.js er installert.
