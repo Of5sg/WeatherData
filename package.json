@@ -1,0 +1,17 @@
+{
+  "name": "vaerdata",
+  "version": "6.0.0",
+  "description": "hente, behandle, og presentere værdata for de neste 7 dagene",
+  "main": "Main.js",
+  "type": "module",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "værdata",
+    "del",
+    "4"
+  ],
+  "author": "Aksel",
+  "license": "ISC"
+}

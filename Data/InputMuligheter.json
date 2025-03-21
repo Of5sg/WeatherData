@@ -1,0 +1,13 @@
+{
+    "temperatur": "Data om temperatur i celsius",
+    "skydekke": "Data om skydekke i prosent",
+    "vind": "Data om vind, hastighet og retning",
+    "regn": "Data om regn, i 1 eller 6 timers perioder utifra hva som er tilgjengelig",
+    "trykk": "Data om lufttrykk ved havnivå i hPa",
+    "fuktighet": "Data om relativ luftfuktighet i prosent",
+    "alt": "Viser alle data-parametere",
+    "nydata": "Henter ny data, hvis nødvendig",
+    "time": "Viser data for hver time av hver dag",
+    "periode": "Viser gjennomsnitt av data for en gitt periode, (klokkeslett-klokkeslett) (antall dager frem) eks: 00-05 2",
+    "parametere": "Viser denne listen"
+}
