@@ -95,7 +95,7 @@ cli.init = async function () {
                             // for hver bokstav i det lengste ordet, av parameter(fra inputMuligheter.json) og ønsketParameter(input).
                             for (let i = 0; i < størrelse; i++ ){
 
-                                //console.log(bufferArray, (count/parameter.length)); // for test, se hva som skjer ---------------------------
+                                // console.log(bufferArray, (count/parameter.length)); // for test, se hva som skjer ---------------------------
 
                                 for(let y = 0; y < 3; y++){
                                     // sammelign med hver bokstav i bufferArray
@@ -104,16 +104,19 @@ cli.init = async function () {
                                         bufferArray.shift();
                                         bufferArray.push(ønsketParameter[i+3]);
                                         count++;
+                                        break;
                                     }else if (bufferArray[y] === parameter[i] && y === 1){
                                         const tempBokstav = bufferArray.shift();
                                         bufferArray.shift();
                                         bufferArray.unshift(tempBokstav);
                                         bufferArray.push(ønsketParameter[i+3]);
                                         count++;
+                                        break;
                                     }else if (bufferArray[y] === parameter[i] && y === 2){
                                         bufferArray.pop();
                                         bufferArray.push(ønsketParameter[i+3]);
                                         count++;
+                                        break;
                                     };
 
                                 };
@@ -124,8 +127,15 @@ cli.init = async function () {
                                         parameterSet.add(parameter);
                                     };
                                     treffPåParameter = 1;
+                                    break;
                                 };
                             };
+                            if(treffPåParameter === 1){
+                                break;
+                            };
+                        };
+                        if(treffPåParameter === 1){
+                            break;
                         };
                     };
 
@@ -142,7 +152,7 @@ cli.init = async function () {
                     };
                 };
 
-                //console.log("\n", parameterSet); // for å se hvilke parametere som er godtatt, for test --------------------------------------
+                // console.log("\n", parameterSet); // for å se hvilke parametere som er godtatt, for test --------------------------------------
                 resolve();
                 
             });
